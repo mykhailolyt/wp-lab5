@@ -1,0 +1,186 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        p, li {
+            font-size: 16px;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        li::marker {
+            color: #3498db;
+        }
+
+        b {
+            color: #2980b9;
+        }
+        #feedback-modal {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 50vw;
+            transform: translateX(-50%);
+            z-index: 2000;
+            min-width: 220px;
+            max-width: 400px; /* smaller than before */
+            background: #fff;
+            box-shadow: 0 2px 12px #0003;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            font-size: 13px;
+        }
+
+        #feedback-drag {
+            cursor: move;
+            background: #3498db;
+            color: #fff;
+            padding: 6px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        #feedback-form {
+            padding: 10px 12px 6px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: stretch;
+        }
+
+        #feedback-form label {
+            margin-bottom: 1px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #feedback-form input,
+        #feedback-form textarea {
+            margin-top: 1px;
+            padding: 4px 6px;
+            font-size: 13px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        #feedback-form textarea {
+            resize: vertical;
+            min-height: 36px;
+        }
+
+        .form-buttons {
+            display: flex;
+            gap: 6px;
+            justify-content: flex-end;
+            margin-top: 2px;
+        }
+
+        .form-buttons button {
+            border: none;
+            border-radius: 4px;
+            padding: 4px 10px;
+            font-size: 13px;
+        }
+
+        #close-modal {
+            background: #eee;
+            color: #333;
+        }
+
+        #feedback-form button[type="submit"] {
+            background: #3498db;
+            color: #fff;
+        }
+
+        #feedback-status {
+            padding: 4px 12px 8px 12px;
+            color: green;
+            font-size: 12px;
+        }
+        #feedback-modal {
+        display: none;
+        position: fixed;
+        left: 50vw;
+        top: 50vh;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 32px #0003;
+        z-index: 2000;
+        min-width: 320px;
+        min-height: 220px;
+        flex-direction: column;
+        padding: 0;
+        }
+        #feedback-modal form {
+            padding: 16px;
+        }
+        #feedback-drag {
+            cursor: move;
+            background: #3498db;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 10px 10px 0 0;
+            font-weight: bold;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #close-modal {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        #feedback-form button[type="submit"] {
+        background: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 14px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 10px;
+        transition: background 0.2s;
+        }
+        #feedback-form button[type="submit"]:hover {
+            background: #217dbb;
+        }
